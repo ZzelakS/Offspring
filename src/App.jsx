@@ -8,10 +8,12 @@ import Programs from './pages/Programs';
 import Admissions from './pages/Admissions';
 // import Parents from './pages/Parents';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
