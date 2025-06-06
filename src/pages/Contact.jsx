@@ -42,9 +42,9 @@ export default function Contact() {
           variants={fadeUp}
         >
           <h2 className="text-2xl font-semibold text-[#D88B3F] mb-4">School Info</h2>
-          <p><strong>Phone:</strong> 08033019787</p>
+          <p><strong>Phone:</strong> +234 803 301 9787</p>
           <p><strong>Email:</strong> info@offspringmontessori.com</p>
-          <p><strong>Location:</strong> [Insert full school address]</p>
+          <p><strong>Location:</strong> Olutoye Crescent, Lagos, Nigeria</p>
           <p><strong>School Hours:</strong> Monday – Friday, 7:00am – 6:00pm</p>
           <p><strong>Pick-Up Time:</strong> Between 1:30pm and 2:00pm</p>
           <p><strong>Weekend Care:</strong> Saturdays available (enquire in advance)</p>

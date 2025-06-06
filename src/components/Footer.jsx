@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -7,30 +7,57 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">About Us</h4>
           <p>
-            Offspring Montessori School provides a nurturing, prepared environment that inspires children to grow intellectually, emotionally, and socially.
+            Offspring Montessori School provides a nurturing, prepared
+            environment that inspires children to grow intellectually,
+            emotionally, and socially.
           </p>
         </div>
 
         <div>
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
-            <li><Link to="/about" className="hover:underline">About</Link></li>
-            <li><Link to="/programs" className="hover:underline">Programs</Link></li>
-            <li><Link to="/admissions" className="hover:underline">Admissions</Link></li>
-            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+            <li>
+              <Link to="/about" className="hover:underline">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs" className="hover:underline">
+                Programs
+              </Link>
+            </li>
+            <li>
+              <Link to="/admissions" className="hover:underline">
+                Admissions
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:underline">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-          <p>123 Montessori Way, Lagos, Nigeria</p>
-          <p>Phone: +234 800 000 0000</p>
+          <p>Olutoye Crescent, Lagos, Nigeria</p>
+          <p>Phone: +234 803 301 9787</p>
           <p>Email: info@offspringmontessori.ng</p>
         </div>
       </div>
 
       <div className="text-center text-xs text-gray-300 mt-8">
-        &copy; {new Date().getFullYear()} Offspring Montessori School. All rights reserved.
+        &copy; {new Date().getFullYear()} Offspring Montessori School. All
+        rights reserved. {" "}
+        <a
+          href="https://wa.me/2349062288078?text=Hi%20Lamar%2C%20I'm%20interested%20in%20working%20with%20you."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#F6BE00] font-semibold hover:underline"
+        >
+          Lamar
+        </a>
       </div>
     </footer>
   );
