@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import LogoSwiper from '../components/LogoSwiper';
 
 const heroImages = [
   '/Music Room.jpeg',
@@ -131,7 +132,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
+          <section>
+            <LogoSwiper/>
+          </section>
       <section className="bg-white px-6 py-20">
         <h2 className="text-4xl font-semibold text-center mb-12 text-[#545A56]">
           What Makes Us Special
