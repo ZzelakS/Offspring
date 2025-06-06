@@ -47,7 +47,7 @@ export default function Navbar() {
     { path: "/about", name: "About" },
     { path: "/programs", name: "Programs" },
     { path: "/admissions", name: "Admissions" },
-    { path: "/parents", name: "Parents" },
+    // { path: "/parents", name: "Parents" },
     { path: "/contact", name: "Contact" },
   ];
 
