@@ -32,12 +32,13 @@ export default function LogoSwiper() {
       >
         {logos.map((logo, index) => (
           <SwiperSlide key={index} className="flex justify-center items-center">
-            <img
-              src={logo}
-              alt={`Logo ${index + 1}`}
-              className="h-16 transition duration-300"
-            />
-          </SwiperSlide>
+  <img
+    src={logo}
+    alt={`Logo ${index + 1}`}
+    className="h-24 transition duration-300"
+  />
+</SwiperSlide>
+
         ))}
       </Swiper>
     </section>
