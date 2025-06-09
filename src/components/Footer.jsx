@@ -41,15 +41,22 @@ export default function Footer() {
 
         <div>
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-          <p>Olutoye Crescent, Lagos, Nigeria</p>
-          <p>Phone: +234 803 301 9787</p>
-          <p>Email: info@offspringmontessori.ng</p>
+          <p>23A, Olutoye Crescent, Ogba, Lagos, Nigeria</p>
+
+          <p>
+            <span className="font-medium">Phone:</span> +234 704 666 1973
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            +234 201 290 4265
+          </p>
+
+          <p>Email: offspringmontessorischool@gmail.com.</p>
         </div>
       </div>
 
       <div className="text-center text-xs text-gray-300 mt-8">
         &copy; {new Date().getFullYear()} Offspring Montessori School. All
-        rights reserved. {" "}
+        rights reserved.{" "}
         <a
           href="https://wa.me/2349062288078?text=Hi%20Lamar%2C%20I'm%20interested%20in%20working%20with%20you."
           target="_blank"

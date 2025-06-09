@@ -9,6 +9,7 @@ import Admissions from './pages/Admissions';
 // import Parents from './pages/Parents';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="/parents" element={<Parents />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <BackToTop/>
       <Footer />
     </Router>
   );

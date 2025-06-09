@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -29,7 +29,8 @@ export default function Contact() {
           custom={1}
           variants={fadeUp}
         >
-          We’re happy to answer your questions and help guide your child’s Montessori journey. Use the form below or reach out directly.
+          We’re happy to answer your questions and help guide your child’s
+          Montessori journey. Use the form below or reach out directly.
         </motion.p>
       </section>
 
@@ -41,13 +42,31 @@ export default function Contact() {
           whileInView="visible"
           variants={fadeUp}
         >
-          <h2 className="text-2xl font-semibold text-[#D88B3F] mb-4">School Info</h2>
-          <p><strong>Phone:</strong> +234 803 301 9787</p>
-          <p><strong>Email:</strong> info@offspringmontessori.com</p>
-          <p><strong>Location:</strong> Olutoye Crescent, Lagos, Nigeria</p>
-          <p><strong>School Hours:</strong> Monday – Friday, 7:00am – 6:00pm</p>
-          <p><strong>Pick-Up Time:</strong> Between 1:30pm and 2:00pm</p>
-          <p><strong>Weekend Care:</strong> Saturdays available (enquire in advance)</p>
+          <h2 className="text-2xl font-semibold text-[#D88B3F] mb-4">
+            School Info
+          </h2>
+          <p>
+            <strong>Phone:</strong> +234 704 666 1973
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            +234 201 290 4265
+          </p>
+          <p>
+            <strong>Email:</strong> offspringmontessorischool@gmail.com.
+          </p>
+          <p>
+            <strong>Location:</strong> 23A, Olutoye Crescent, Ogba, Lagos, Nigeria.
+          </p>
+          <p>
+            <strong>School Hours:</strong> Monday – Friday, 7:00am – 6:00pm.
+          </p>
+          <p>
+            <strong>Pick-Up Time:</strong> Between 1:30pm and 2:00pm.
+          </p>
+          <p>
+            <strong>Weekend Care:</strong> Saturdays available (enquire in
+            advance).
+          </p>
         </motion.div>
 
         {/* Contact Form */}
@@ -57,7 +76,9 @@ export default function Contact() {
           whileInView="visible"
           variants={fadeUp}
         >
-          <h2 className="text-2xl font-semibold text-[#545A56]">Send Us a Message</h2>
+          <h2 className="text-2xl font-semibold text-[#545A56]">
+            Send Us a Message
+          </h2>
           <div>
             <label className="block mb-1 font-medium text-sm">Full Name</label>
             <input
@@ -67,7 +88,9 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block mb-1 font-medium text-sm">Email Address</label>
+            <label className="block mb-1 font-medium text-sm">
+              Email Address
+            </label>
             <input
               type="email"
               className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D88B3F]"
@@ -75,7 +98,9 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block mb-1 font-medium text-sm">Your Message</label>
+            <label className="block mb-1 font-medium text-sm">
+              Your Message
+            </label>
             <textarea
               rows="5"
               className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D88B3F]"
@@ -101,15 +126,16 @@ export default function Contact() {
         >
           Visit Us
         </motion.h2>
-        <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-xl overflow-hidden shadow-lg max-w-full mx-auto my-8">
           <iframe
             title="School Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!..." // Replace with your map link
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.221160237309!2d3.3444729000000004!3d6.619424899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93d0b70d64af%3A0xf09a8ad9daaacc4a!2s23%20Olutoye%20Cres%2C%20Ogba%2C%20Lagos%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1749460710639!5m2!1sen!2sng"
             width="100%"
             height="350"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
