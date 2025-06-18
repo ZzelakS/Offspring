@@ -55,7 +55,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Discover. Learn. Grow.
+            Uncovering the potentials in your child!
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function Home() {
               to="/admissions"
               className="inline-block mt-6 px-8 py-3 bg-[#D88B3F] text-white text-lg rounded-full hover:bg-[#C17830] transition duration-300 shadow-lg"
             >
-              Enroll Now
+              Enrol
             </Link>
           </motion.div>
         </div>
@@ -205,7 +205,7 @@ export default function Home() {
         </div>
         <div className="text-center mt-10">
           <Link
-            to="/gallery"
+            to="#"
             className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow-lg"
           >
             View Full Gallery

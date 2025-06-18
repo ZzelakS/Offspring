@@ -18,7 +18,7 @@ export default function About() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
           <h2 className="text-4xl font-semibold mb-4 text-[#545A56]">Our Mission</h2>
           <p className="text-lg text-[#5A5A5A] leading-relaxed">
-            At Offspring Montessori, we nurture children's potential in a hands-on, dynamic environment that fosters independence, creativity, and joyful discovery.
+            Offspring Montessori School's mission is to provide a dynamic, independent learning environment that is hands-on and student driven for children ages 3 months to 6 years.
           </p>
         </motion.div>
         <motion.img
