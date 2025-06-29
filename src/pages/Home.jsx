@@ -4,11 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import LogoSwiper from '../components/LogoSwiper';
 
 const heroImages = [
-  '/Music Room.jpeg',
-  '/Laboratory.jpg',
-  '/Sick Bay.jpeg',
-  '/Playroom.jpeg',
-  '/Lounge.jpeg'
+  { src: '/Music Room.jpeg', label: 'Music Room' },
+  { src: '/Gallery3.jpeg', label: 'After School Multipurpose Room' },
+  { src: '/Sick Bay.jpeg', label: 'Sick Bay' },
+  { src: '/Daycare3.jpeg', label: 'Crèche( 3-12month) Feeding and Sleeping area' },
+  { src: '/Lounge.jpeg', label: 'After School/Indoor Play Room' },
+  { src: '/Toilet.jpeg', label: 'Child size Toilet' },
+  { src: '/Playground.jpeg', label: 'Outdoor Play Area' },
+  { src: '/Our Reception.jpeg', label: 'Our Reception' },
+  { src: '/Crèche kitchenette.jpeg', label: 'Crèche Kitchenette' },
+  { src: '/Art room.jpeg', label: 'Art Room' },
+   { src: '/Montessori early childhood class (3 -6 years ).jpeg', label: 'Montessori Early Childhood Class (3-6 years)' },
+  { src: '/Montessori Crèche class (3 -12 months).jpeg', label: 'Montessori Crèche Class (3-12 months)' },
+  { src: '/Afterschool Sleeping Room.jpeg', label: 'Afterschool Sleeping Room' },
 ];
 
 export default function Home() {
@@ -27,9 +35,9 @@ export default function Home() {
       <div className="relative h-[90vh] overflow-hidden">
         <AnimatePresence>
           <motion.img
-            key={heroImages[current]}
-            src={heroImages[current]}
-            alt="Montessori Background"
+            key={heroImages[current].src}
+            src={heroImages[current].src}
+            alt={heroImages[current].label}
             className="absolute inset-0 w-full h-full object-cover"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -37,9 +45,16 @@ export default function Home() {
             transition={{ duration: 1 }}
           />
         </AnimatePresence>
-        {/* Overlay */}
+
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        {/* Content */}
+
+        {/* Image Label */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 bg-[#00000088] px-6 py-2 rounded-full text-white text-lg font-medium shadow-lg">
+          {heroImages[current].label}
+        </div>
+
+        {/* Hero Content */}
         <div className="relative z-20 h-full flex flex-col justify-center items-center text-center px-6">
           <motion.h1
             className="text-5xl md:text-6xl font-heading font-bold text-white drop-shadow-xl"
@@ -132,9 +147,11 @@ export default function Home() {
           </Link>
         </div>
       </section>
-          <section>
-            <LogoSwiper/>
-          </section>
+
+      <section>
+        <LogoSwiper />
+      </section>
+
       <section className="bg-white px-6 py-20">
         <h2 className="text-4xl font-semibold text-center mb-12 text-[#545A56]">
           What Makes Us Special

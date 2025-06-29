@@ -50,10 +50,10 @@ const fadeUp = {
 export default function Admissions() {
   return (
     <div className="pt-24 bg-[#f9f5f1] text-[#3a3a3a]">
-      {/* Hero image + title */}
+      {/* Hero Section */}
       <section className="relative h-[60vh] w-full overflow-hidden mb-12">
         <img
-          src="/Admissions.jpg" // <-- Replace with your real image path
+          src="/Admissions.jpg"
           alt="Montessori Admission"
           className="w-full h-full object-cover"
         />
@@ -69,7 +69,7 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Intro */}
       <section className="px-6 pb-20 max-w-4xl mx-auto text-center">
         <motion.p
           className="text-lg text-[#5A5A5A] max-w-2xl mx-auto"
@@ -82,7 +82,7 @@ export default function Admissions() {
         </motion.p>
       </section>
 
-      {/* Steps Section */}
+      {/* How to Enrol */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-12 text-[#545A56]">How to Enrol</h2>
@@ -105,40 +105,41 @@ export default function Admissions() {
         </div>
       </section>
 
-      {/* Requirements */}
-      <section className="py-20 bg-[#fff9f4] max-w-5xl mx-auto px-6">
+      {/* 🆕 Enrollment Process Section */}
+      <section className="py-20 bg-[#fff9f4] px-6 max-w-5xl mx-auto">
+        <h2 className="text-3xl font-semibold text-center text-[#545A56] mb-6">Enrollment Process</h2>
+        <motion.div
+          className="text-[#5A5A5A] text-lg space-y-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+        >
+          <p>Offspring Montessori School accepts children for enrollment either in September or any time during the school year in the following order:</p>
+          <ol className="list-decimal list-inside space-y-1 ml-4">
+            <li>Current students</li>
+            <li>Siblings</li>
+            <li>New Enrollees</li>
+          </ol>
+          <p>Once we are at capacity, new applicants should fill out a form and will be placed on a waitlist.</p>
+          <p><strong>Note:</strong> New Enrollees cannot begin their first day of school until a tour with at least one parent takes place and the following items have been submitted:</p>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li>Completed Admission Form</li>
+            <li>Completed Well Check form</li>
+            <li>Copy of immunization records</li>
+            <li>Signed Contract</li>
+            <li>Signed Parent Handbook agreement form</li>
+            <li>Signed Discipline Policy form</li>
+            <li>Bank Draft, Transfer, or Bank Teller payment</li>
+          </ul>
+        </motion.div>
+      </section>
+
+      {/* Admission Requirements */}
+      <section className="py-20 bg-white max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-semibold text-center text-[#545A56] mb-8">Admission Requirements</h2>
         <ul className="grid md:grid-cols-2 gap-6 text-[#5A5A5A] text-lg">
           {requirements.map((item, index) => (
-            <motion.li
-              key={index}
-              className="bg-white p-4 rounded-lg shadow hover:shadow-md hover:-translate-y-1 transition"
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-            >
-              {item}
-            </motion.li>
-          ))}
-        </ul>
-      </section>
-
-            {/* What to Bring */}
-      <section className="py-20 bg-white max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-center text-[#545A56] mb-8">What to Bring on Your First Day</h2>
-        <ul className="grid md:grid-cols-2 gap-6 text-[#5A5A5A] text-lg">
-          {[
-  "Complete change of clothes including underwear (labeled) — see Clothing section",
-  "Blanket every Monday if your child naps — see Naps and Rest Time",
-  "Daily lunch — see Lunch and Lunch Bag section",
-  "Label everything (especially clothing and blankets)",
-  "At least five pairs of underwear and pants/shorts if toilet training is recent",
-  "No pull-ups or diapers — toddlers must be in underwear",
-  "Check cubby bags labeled with your child’s name for soiled clothes",
-  "Ask for our toilet training guide if your child is starting soon"
-].map((item, index) => (
             <motion.li
               key={index}
               className="bg-[#f9f5f1] p-4 rounded-lg shadow hover:shadow-md hover:-translate-y-1 transition"
@@ -154,8 +155,36 @@ export default function Admissions() {
         </ul>
       </section>
 
+      {/* What to Bring */}
+      <section className="py-20 bg-white max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-semibold text-center text-[#545A56] mb-8">What to Bring on Your First Day</h2>
+        <ul className="grid md:grid-cols-2 gap-6 text-[#5A5A5A] text-lg">
+          {[
+            "Complete change of clothes including underwear (labeled) — see Clothing section",
+            "Blanket every Monday if your child naps — see Naps and Rest Time",
+            "Daily lunch — see Lunch and Lunch Bag section",
+            "Label everything (especially clothing and blankets)",
+            "At least five pairs of underwear and pants/shorts if toilet training is recent",
+            "No pull-ups or diapers — toddlers must be in underwear",
+            "Check cubby bags labeled with your child’s name for soiled clothes",
+            "Ask for our toilet training guide if your child is starting soon"
+          ].map((item, index) => (
+            <motion.li
+              key={index}
+              className="bg-[#f6f1ec] p-4 rounded-lg shadow hover:shadow-md hover:-translate-y-1 transition"
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+            >
+              {item}
+            </motion.li>
+          ))}
+        </ul>
+      </section>
 
-      {/* Age Groups */}
+      {/* Age Group Placement */}
       <section className="py-20 max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-10 text-[#545A56]">Age Group Placement</h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -180,16 +209,14 @@ export default function Admissions() {
       <section className="text-center py-20 bg-white">
         <h2 className="text-2xl font-semibold text-[#545A56] mb-4">Ready to Join Us?</h2>
         <p className="text-[#5A5A5A] mb-6">Start your child’s Montessori journey today. Reach out to schedule a visit or begin enrollment.</p>
-     <a 
-  href="https://wa.me/2348099517000?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Montessori%20school.%20Could%20you%20please%20share%20some%20information%20about%20admissions%3F"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow"
->
-  Contact Admissions
-</a>
-
-
+        <a 
+          href="https://wa.me/2348099517000?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Montessori%20school.%20Could%20you%20please%20share%20some%20information%20about%20admissions%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow"
+        >
+          Contact Admissions
+        </a>
       </section>
     </div>
   );
