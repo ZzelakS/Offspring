@@ -180,12 +180,16 @@ export default function Admissions() {
       <section className="text-center py-20 bg-white">
         <h2 className="text-2xl font-semibold text-[#545A56] mb-4">Ready to Join Us?</h2>
         <p className="text-[#5A5A5A] mb-6">Start your child’s Montessori journey today. Reach out to schedule a visit or begin enrollment.</p>
-        <Link
-          to="/contact"
-          className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow"
-        >
-          Contact Admissions
-        </Link>
+     <a 
+  href="https://wa.me/2348099517000?text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20Montessori%20school.%20Could%20you%20please%20share%20some%20information%20about%20admissions%3F"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow"
+>
+  Contact Admissions
+</a>
+
+
       </section>
     </div>
   );
