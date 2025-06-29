@@ -22,9 +22,9 @@ export default function About() {
           </p>
         </motion.div>
         <motion.img
-          src="/Class.jpeg"
+          src="/Laboratory.jpg"
           alt="Mission"
-          className="rounded-xl shadow-md"
+          className="rounded-xl shadow-md aspect-square"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -43,7 +43,7 @@ export default function About() {
     viewport={{ once: true }}
   >
     <img
-      src="/Philosophy.jpg"
+      src="/Gallery2.jpeg"
       alt="Philosophy"
       className="rounded-xl shadow-md w-full h-58 object-cover aspect-square"
     />
@@ -61,15 +61,19 @@ export default function About() {
     viewport={{ once: true }}
     variants={fadeUp}
   >
-    <h2 className="text-4xl font-semibold mb-4 text-[#545A56]">A Montessori Legacy</h2>
-    <p className="text-lg text-[#5A5A5A] leading-relaxed">
-      Offspring Montessori School was created in January of 2014 but finally opened its doors on October 1st 2024 by Adesola Medayese, a veteran of Montessori philosophy and a parent of two. She created what she could not find for her own children: a friendly and open Montessori school where smiles are infectious. Teachers and Directors are happy and excellent at what they do, and the school is clean and inviting.
-      <br /><br />
-      We want our students to experience such a positive impact on their learning that our parents would never consider having them attend school anywhere else!
-      <br /><br />
-      <strong>Vision Statement</strong><br />
-      Uncovering the potential in your child!
-    </p>
+   <h2 className="text-4xl font-semibold mb-4 text-[#545A56]">A Montessori Legacy</h2>
+<p className="text-lg text-[#5A5A5A] leading-relaxed">
+  Offspring Montessori School was created in January of 2014 but finally opened its doors on October 1st 2024 by Adesola Medayese, a veteran of Montessori philosophy and a parent of two. She created what she could not find for her own children: a friendly and open Montessori school where smiles are infectious. Teachers and Directors are happy and excellent at what they do, and the school is clean and inviting.
+  <br /><br />
+  We want our students to experience such a positive impact on their learning that our parents would never consider having them attend school anywhere else!
+</p>
+    <br /><br />
+    <br /><br />
+<h2 className="text-4xl font-semibold mb-4 text-[#545A56]">Vision Statement</h2>
+<p className="text-lg text-[#5A5A5A] leading-relaxed">
+  Uncovering the potential in your child!
+</p>
+
   </motion.div>
 </section>
 

@@ -7,6 +7,7 @@ import About from './pages/About';
 import Programs from './pages/Programs';
 import Admissions from './pages/Admissions';
 import Faq from './pages/Faq';
+import Gallery from './pages/Gallery';
 // import Parents from './pages/Parents';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
@@ -25,6 +26,7 @@ function App() {
         {/* <Route path="/parents" element={<Parents />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <BackToTop/>
       <Footer />

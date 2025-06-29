@@ -205,7 +205,7 @@ export default function Home() {
         </div>
         <div className="text-center mt-10">
           <Link
-            to="#"
+            to="/gallery"
             className="px-8 py-3 bg-[#D88B3F] text-white rounded-full hover:bg-[#C17830] transition duration-300 shadow-lg"
           >
             View Full Gallery
