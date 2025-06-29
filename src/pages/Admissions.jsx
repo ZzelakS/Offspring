@@ -125,6 +125,36 @@ export default function Admissions() {
         </ul>
       </section>
 
+            {/* What to Bring */}
+      <section className="py-20 bg-white max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-semibold text-center text-[#545A56] mb-8">What to Bring on Your First Day</h2>
+        <ul className="grid md:grid-cols-2 gap-6 text-[#5A5A5A] text-lg">
+          {[
+  "Complete change of clothes including underwear (labeled) — see Clothing section",
+  "Blanket every Monday if your child naps — see Naps and Rest Time",
+  "Daily lunch — see Lunch and Lunch Bag section",
+  "Label everything (especially clothing and blankets)",
+  "At least five pairs of underwear and pants/shorts if toilet training is recent",
+  "No pull-ups or diapers — toddlers must be in underwear",
+  "Check cubby bags labeled with your child’s name for soiled clothes",
+  "Ask for our toilet training guide if your child is starting soon"
+].map((item, index) => (
+            <motion.li
+              key={index}
+              className="bg-[#f9f5f1] p-4 rounded-lg shadow hover:shadow-md hover:-translate-y-1 transition"
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+            >
+              {item}
+            </motion.li>
+          ))}
+        </ul>
+      </section>
+
+
       {/* Age Groups */}
       <section className="py-20 max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold mb-10 text-[#545A56]">Age Group Placement</h2>

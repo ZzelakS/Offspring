@@ -22,7 +22,7 @@ export default function About() {
           </p>
         </motion.div>
         <motion.img
-          src="/Mission.jpg"
+          src="/Class.jpeg"
           alt="Mission"
           className="rounded-xl shadow-md"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -32,27 +32,47 @@ export default function About() {
         />
       </section>
 
-      {/* History + Philosophy */}
-      <section className="px-6 py-20 bg-[#f6f1ec] grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-        <motion.img
-          src="/Philosophy.jpg"
-          alt="Philosophy"
-          className="rounded-xl shadow-md"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        />
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-          <h2 className="text-4xl font-semibold mb-4 text-[#545A56]">A Montessori Legacy</h2>
-          <p className="text-lg text-[#5A5A5A] leading-relaxed">
-            Offspring Montessori School was created in January of 2014 but finally opened its doors on October 1st 2024 by Adesola Medayese, a veteran of Montessori philosophy and a parent of two. She created what she could not find for her own children: a friendly and open Montessori school where smiles are infectious. Teachers and Directors are happy and excellent at what they do, and the school is clean and inviting.
-We want our students to experience such a positive impact on their learning that our parents would never consider having them attend school anywhere else!
-Vision Statement
-Uncovering the potential in your child!
-          </p>
-        </motion.div>
-      </section>
+  {/* History + Philosophy */}
+<section className="px-6 py-20 bg-[#f6f1ec] grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+  {/* Two stacked square thumbnails */}
+  <motion.div
+    className="flex flex-col gap-6"
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+  >
+    <img
+      src="/Philosophy.jpg"
+      alt="Philosophy"
+      className="rounded-xl shadow-md w-full h-58 object-cover aspect-square"
+    />
+    <img
+      src="/Playground.jpeg"
+      alt="History"
+      className="rounded-xl shadow-md w-full h-58 object-cover aspect-square"
+    />
+  </motion.div>
+
+  {/* Text content */}
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeUp}
+  >
+    <h2 className="text-4xl font-semibold mb-4 text-[#545A56]">A Montessori Legacy</h2>
+    <p className="text-lg text-[#5A5A5A] leading-relaxed">
+      Offspring Montessori School was created in January of 2014 but finally opened its doors on October 1st 2024 by Adesola Medayese, a veteran of Montessori philosophy and a parent of two. She created what she could not find for her own children: a friendly and open Montessori school where smiles are infectious. Teachers and Directors are happy and excellent at what they do, and the school is clean and inviting.
+      <br /><br />
+      We want our students to experience such a positive impact on their learning that our parents would never consider having them attend school anywhere else!
+      <br /><br />
+      <strong>Vision Statement</strong><br />
+      Uncovering the potential in your child!
+    </p>
+  </motion.div>
+</section>
+
 
       {/* Curriculum Overview */}
       <section className="px-6 py-20 bg-white max-w-6xl mx-auto text-center">
@@ -103,7 +123,7 @@ Uncovering the potential in your child!
         <motion.img
           src="/Music Room.jpeg"
           alt="Enrichment"
-          className="rounded-xl shadow-md"
+          className="rounded-xl shadow-md aspect-square"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
