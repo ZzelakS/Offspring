@@ -23,11 +23,12 @@ const images = [
   { src: '/Montessori early childhood class (3 -6 years ).jpeg', label: 'Montessori Early Childhood Class (3-6 years)' },
   { src: '/Montessori Crèche class (3 -12 months).jpeg', label: 'Montessori Crèche Class (3-12 months)' },
   { src: '/Afterschool Sleeping Room.jpeg', label: 'Afterschool Sleeping Room' },
-  { src: '/Gallery1.jpeg', alt: 'Gallery Image 1', label: 'Montessori Early Childhood Class (3-6 years)' },
+  { src: '/Gallery1.jpeg', alt: 'Gallery Image 1', label: 'Toddler Class (1-3 years)' },
   { src: '/Gallery4.jpeg', alt: 'Gallery Image 4', label: 'Crèche( 3-12month)' },
   { src: '/Daycare2.jpeg', alt: 'Daycare', label: 'Crèche( 3-12month) Feeding and Sleeping area (Alternate)' },
-  { src: '/Laboratory.jpg', alt: 'Laboratory', label: 'Laboratory' },
-  { src: '/Playroom.jpeg', alt: 'Playroom', label: 'Playroom' },
+  { src: '/Laboratory.jpg', alt: 'Laboratory', label: 'Early Childhood Class (Practical Life Area)' },
+  { src: '/Playroom.jpeg', alt: 'Playroom', label: 'Toddler Class (1-3 years)' },
+  { src: '/Lactation (Mothers’) room.jpeg', alt: 'Playroom', label: 'Lactation (Mothers’) Room' },
 ];
 
 export default function Gallery() {
