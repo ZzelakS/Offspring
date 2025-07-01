@@ -60,32 +60,37 @@ const enrichmentPrograms = [
 const curriculumAreas = [
   {
     title: "Practical Life",
+    image: "/Laboratory.jpg",
     description:
-      "This area of the curriculum is designed to invite the young learner to act and work on real life tasks that foster independence, coordination, order and concentration. It is in a sense the doorway to the Montessori curriculum. This is the area where the child may first choose independent work. The practical life area contains many attractively displayed objects familiar to the child, including a variety of items commonly used in the tasks of daily living, like eating, dressing and cleaning. They offer the child meaningful, non-threatening modes of activity. The materials are also carefully designed and demonstrated to help teach skills involved with caring for the environment and the self, to encourage responsibility, autonomy and to promote high self- esteem.",
+      "This area of the curriculum is designed to invite the young learner to act and work on real life tasks that foster independence, coordination, order and concentration. It is in a sense the doorway to the Montessori curriculum. This is the area where the child may first choose independent work. The practical life area contains many attractively displayed objects familiar to the child, including a variety of items commonly used in the tasks of daily living, like eating, dressing and cleaning. They offer the child meaningful, non-threatening modes of activity. The materials are also carefully designed and demonstrated to help teach skills involved with caring for the environment and the self, to encourage responsibility, autonomy and to promote high self-esteem.",
   },
   {
     title: "Sensorial",
+    image: "/Sensorial Area.jpeg",
     description:
       "Dr. Montessori saw the senses as the 'doorway to the mind'. She considered sensory and manipulation not only an aid to the development of maturing sense organs (eyes, ears, nose, tongue and skin) but a starting point for intellectual growth. She believed that by helping children to order, compare and classify sensory stimulation, their intellectual development would be greatly assisted and future learning would be more meaningful and useful. The basic sensorial exercise inspires careful observation and calls attention to specific qualities requiring identification of similarities and contrasts. The mind must judge, compare, classify and draw conclusions. These exercises tend to fascinate children because they are difficult enough to represent a real and meaningful challenge. They are then better prepared for future learning in math, language, and science and making sense of life's experiences and information in general.",
   },
   {
     title: "Mathematics",
+    image: "/Mathematics.jpeg",
     description:
       "The central purpose of the Math materials in the early years is to lay the foundation for later cognitive development and to prepare for the gradual transition to abstract thinking. The primary values of these earlier activities in mathematics are found in the way they transform ideas into actions on concrete materials. Students who learn math by rote method often have no real understanding or ability to put their skills to use in everyday life. Montessori students use hands-on learning materials that make abstract concepts clear and concrete.",
   },
   {
     title: "Language",
+    image: "/Language.jpeg",
     description:
       "Language development is a concern of the entire Montessori classroom. Many activities in other areas, as well as with a large group, foster vocabulary development, communication skills, writing and reading readiness. In the language area we will find a large variety of reading readiness materials, including materials for phonetic analysis, word attack skills and reading, as well as materials for the refinement of motor control for writing. In the Montessori method, writing precedes reading, as the children explore with drawing and forming letters. The process of learning how to read should be as painless and simple as learning how to speak. The child begins by exploring the sounds that compose words and by relating them to the letters of the alphabet. He can soon produce words and sentences free of all other mechanical difficulties. In the meantime he trains his hand to become precise and sure for the writing movements. Reading is prepared indirectly from writing. The child starts from what he knows about the letters and the sounds. Then we give him the key to read all the words he can encounter. Reading skills normally develop so smoothly in Montessori classrooms that students tend to exhibit a sudden 'reading explosion' which leaves the children and their families beaming with pride. Dr. Montessori's research confirmed what observant parents have always known: children learn best by touch and manipulation, not by repeating what they are told. Her manipulative approach to teaching children how to read phonetically is nothing short of brilliance and should have long ago become a basic element in every Early-childhood classroom around the world.",
   },
   {
     title: "Cultural Work",
+    image: "/Cultural.jpeg",
     description:
       "Science is an integral element of the Montessori curriculum. Among other things, it represents a way of life: a clear thinking approach to gathering information and problem solving. The scope of the Montessori science curriculum includes a sound introduction to botany, zoology, chemistry, physics, geology and astronomy. The Montessori approach to science cultivates children's fascination with the universe and helps them develop a lifelong interest in observing nature and discovering more about the world in which we live. Our teachers introduce history and geography as early as age three. The youngest students work with specially designed maps and begin to learn the names of the world's continents and countries. They learn to treasure the richness of their own cultural heritage and those of their friends. Music and movement education will also be important parts of the curriculum as well as the Arts. They offer children ways to express themselves, their feelings, experiences and ideas. Montessori schools are very interested in helping children develop control of their fine and gross-motor movement.",
   },
 ];
 
-const SectionCard = ({ title, description, index }) => (
+const SectionCard = ({ title, description, index, image }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -93,6 +98,13 @@ const SectionCard = ({ title, description, index }) => (
     transition={{ duration: 0.5, delay: index * 0.1 }}
     className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
   >
+    {image && (
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-50 object-fit rounded-md mb-4 aspect-square"
+      />
+    )}
     <h3 className="text-xl font-semibold text-[#D88B3F] mb-2">{title}</h3>
     <p className="text-[#4a4a4a]">{description}</p>
   </motion.div>
